@@ -1,6 +1,6 @@
 ---
-- name: windows rolling update
-  hosts: server
+- name: Windows rolling update
+  hosts: server4
   tasks:
     - name: Install all critical and security updates
       ansible.windows.win_updates:
