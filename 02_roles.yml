@@ -1,4 +1,3 @@
----
 - name: Webserver Role
   hosts: linuxservers
   become: true
