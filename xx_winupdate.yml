@@ -1,0 +1,10 @@
+---
+- name: Use Ansible Shell
+  hosts: server4
+  become: true
+
+- name: Search-only, return list of found updates (if any), log to C:\ansible_wu.txt
+  ansible.windows.win_updates:
+    category_names: SecurityUpdates
+    state: searched
+    log_path: C:\ansible_wu.txt
